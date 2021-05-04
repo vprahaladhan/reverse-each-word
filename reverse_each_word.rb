@@ -3,7 +3,9 @@ def reverse_each_word(sentence)
 end
 
 def split_sentence(sentence) 
-  sentence.split(" ").collect() do |word|
+  sentence.split(" ").collect!() do |word|
     word.reverse()
   end
 end
+
+puts split_sentence("Hello there, how are you?")
